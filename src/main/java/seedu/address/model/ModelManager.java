@@ -13,7 +13,6 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
-import javafx.collections.transformation.SortedList;
 import seedu.address.commons.core.GuiSettings;
 import seedu.address.commons.core.LogsCenter;
 import seedu.address.model.person.Person;
@@ -97,11 +96,6 @@ public class ModelManager implements Model {
     }
 
     @Override
-    public void sortAddressBook() {
-        versionedAddressBook.sort();
-    }
-
-    @Override
     public boolean hasPerson(Person person) {
         requireNonNull(person);
         return versionedAddressBook.hasPerson(person);
@@ -125,7 +119,6 @@ public class ModelManager implements Model {
         versionedAddressBook.setPerson(target, editedPerson);
     }
 
-
     //=========== Filtered Person List Accessors =============================================================
 
     /**
@@ -142,7 +135,6 @@ public class ModelManager implements Model {
         requireNonNull(predicate);
         filteredPersons.setPredicate(predicate);
     }
-
 
     //=========== Undo/Redo =================================================================================
 
