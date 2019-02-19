@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="stylesheets/coderay-asciidoctor.css"></head><body class="article"><div id="header"><h1>AddressBook Level 4 - User Guide</h1></div><div id="content"><div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>By: <code>Team SE-EDU</code>      Since: <code>Jun 2016</code>      Licence: <code>MIT</code></p>
+<p>By: <code>CS2103 W15-4</code>      Since: <code>Feb 2019</code>      Licence: <code>MIT</code></p>
 </div>
 </div>
 <div id="toc" class="toc">
@@ -11,26 +11,40 @@
 <ul class="sectlevel1">
 <li><a href="#introduction">1. Introduction</a></li>
 <li><a href="#quick-start">2. Quick Start</a></li>
-<li><a href="#Features">3. Features</a>
+<li><a href="#Features">3. User Features</a>
 <ul class="sectlevel2">
 <li><a href="#viewing-help-code-help-code">3.1. Viewing help : <code>help</code></a></li>
-<li><a href="#adding-a-person-code-add-code">3.2. Adding a person: <code>add</code></a></li>
-<li><a href="#listing-all-persons-code-list-code">3.3. Listing all persons : <code>list</code></a></li>
-<li><a href="#editing-a-person-code-edit-code">3.4. Editing a person : <code>edit</code></a></li>
-<li><a href="#locating-persons-by-name-code-find-code">3.5. Locating persons by name: <code>find</code></a></li>
-<li><a href="#deleting-a-person-code-delete-code">3.6. Deleting a person : <code>delete</code></a></li>
-<li><a href="#selecting-a-person-code-select-code">3.7. Selecting a person : <code>select</code></a></li>
-<li><a href="#listing-entered-commands-code-history-code">3.8. Listing entered commands : <code>history</code></a></li>
-<li><a href="#undoing-previous-command-code-undo-code">3.9. Undoing previous command : <code>undo</code></a></li>
-<li><a href="#redoing-the-previously-undone-command-code-redo-code">3.10. Redoing the previously undone command : <code>redo</code></a></li>
-<li><a href="#clearing-all-entries-code-clear-code">3.11. Clearing all entries : <code>clear</code></a></li>
-<li><a href="#exiting-the-program-code-exit-code">3.12. Exiting the program : <code>exit</code></a></li>
-<li><a href="#saving-the-data">3.13. Saving the data</a></li>
-<li><a href="#encrypting-data-files-code-coming-in-v2-0-code">3.14. Encrypting data files <code>[coming in v2.0]</code></a></li>
+<li><a href="#log-in-code-login-code-code-not-implemented-yet-code">3.2. Log in : <code>login</code> <code>Not implemented yet</code></a></li>
+<li><a href="#log-out-code-logout-code-code-not-implemented-yet-code">3.3. Log out : <code>logout</code> <code>Not implemented yet</code></a></li>
+<li><a href="#change-password-code-chpass-code-code-not-implemented-yet-code">3.4. Change password : <code>chpass</code> <code>Not implemented yet</code></a></li>
+<li><a href="#view-duties-assigned-to-user-code-view-code-code-not-implemented-yet-code">3.5. View duties assigned to user : <code>view</code> <code>Not implemented yet</code></a></li>
+<li><a href="#view-duties-assigned-to-other-users-code-view-code-code-not-implemented-yet-code">3.6. View duties assigned to other users : <code>view</code> <code>Not implemented yet</code></a></li>
+<li><a href="#view-roster-code-roster-code-code-not-implemented-yet-code">3.7. View roster : <code>roster</code> <code>Not implemented yet</code></a></li>
+<li><a href="#block-dates-code-block-code">3.8. Block dates : <code>block</code></a></li>
+<li><a href="#view-blocked-dates-code-block-code">3.9. View blocked dates : <code>block</code></a></li>
+<li><a href="#find-who-is-assigned-duty-today-code-who-code">3.10. Find who is assigned duty today : <code>who</code></a></li>
+<li><a href="#find-who-is-assigned-duty-on-a-given-day-code-who-code">3.11. Find who is assigned duty on a given day : <code>who</code></a></li>
+<li><a href="#make-a-swap-request-with-another-user-code-swap-code">3.12. Make a swap request with another user : <code>swap</code></a></li>
+<li><a href="#finding-another-person-code-find-code">3.13. Finding another person: <code>find</code></a></li>
+<li><a href="#filter-people-code-filter-code">3.14. Filter people: <code>filter</code></a></li>
+<li><a href="#exit-code-exit-code">3.15. Exit : <code>exit</code></a></li>
 </ul>
 </li>
-<li><a href="#faq">4. FAQ</a></li>
-<li><a href="#command-summary">5. Command Summary</a></li>
+<li><a href="#admin-features">4. Admin Features</a>
+<ul class="sectlevel2">
+<li><a href="#viewing-help-for-admin-code-helpadmin-code">4.1. Viewing help for admin : <code>helpadmin</code></a></li>
+<li><a href="#add-a-user-code-add-code">4.2. Add a user : <code>add</code></a></li>
+<li><a href="#delete-a-user-code-delete-code">4.3. Delete a user : <code>delete</code></a></li>
+<li><a href="#update-a-user-s-details-code-edit-code">4.4. Update a user’s details : <code>edit</code></a></li>
+<li><a href="#import-personal-details-from-a-file-code-import-code">4.5. Import personal details from a file : <code>import</code></a></li>
+<li><a href="#list-all-the-users-code-list-code">4.6. List all the users: <code>list</code></a></li>
+<li><a href="#scheduling-duties-code-schedule-code">4.7. Scheduling duties : <code>schedule</code></a></li>
+<li><a href="#extra-duty-code-extra-code">4.8. Extra duty : <code>extra</code></a></li>
+<li><a href="#saving-the-data">4.9. Saving the data</a></li>
+</ul>
+</li>
+<li><a href="#faq">5. FAQ</a></li>
+<li><a href="#command-summary">6. Command Summary</a></li>
 </ul>
 </div>
 </div>
@@ -38,7 +52,7 @@
 <h2 id="introduction"><a class="link" href="#introduction">1. Introduction</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>AddressBook Level 4 (AB4) is for those who <strong>prefer to use a desktop app for managing contacts</strong>. More importantly, AB4 is <strong>optimized for those who prefer to work with a Command Line Interface</strong> (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, AB4 can get your contact management tasks done faster than traditional GUI apps. Interested? Jump to the <a href="#quick-start">Section 2, &#8220;Quick Start&#8221;</a> to get started. Enjoy!</p>
+<p>DutyPlanner is optimized for those who prefer to work with a Command Line Interface (CLI) while still having the benefits of a Graphical User Interface (GUI). It is a software designed to automate the process of assigning guard duties for soldiers in the Singapore Armed Forces, so that the commanders no longer have to manually assign the dates.</p>
 </div>
 </div>
 </div>
@@ -51,18 +65,7 @@
 <p>Ensure you have Java version <code>9</code> or later installed in your Computer.</p>
 </li>
 <li>
-<p>Download the latest <code>addressbook.jar</code> <a href="https://github.com/se-edu/addressbook-level4/releases">here</a>.</p>
-</li>
-<li>
-<p>Copy the file to the folder you want to use as the home folder for your Address Book.</p>
-</li>
-<li>
-<p>Double-click the file to start the app. The GUI should appear in a few seconds.</p>
-<div class="imageblock">
-<div class="content">
-<img src="images/Ui.png" alt="Ui" width="790">
-</div>
-</div>
+<p>{To be added}</p>
 </li>
 <li>
 <p>Type the command in the command box and press <kbd>Enter</kbd> to execute it.<br>
@@ -88,14 +91,14 @@ e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> wil
 </div>
 </li>
 <li>
-<p>Refer to <a href="#Features">Section 3, &#8220;Features&#8221;</a> for details of each command.</p>
+<p>Refer to <a href="#Features">Section 3, &#8220;User Features&#8221;</a> for details of each command.</p>
 </li>
 </ol>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Features"><a class="link" href="#Features">3. Features</a></h2>
+<h2 id="Features"><a class="link" href="#Features">3. User Features</a></h2>
 <div class="sectionbody">
 <div class="exampleblock">
 <div class="content">
@@ -105,7 +108,7 @@ e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> wil
 <div class="ulist">
 <ul>
 <li>
-<p>Words in <code>UPPER_CASE</code> are the parameters to be supplied by the user e.g. in <code>add n/NAME</code>, <code>NAME</code> is a parameter which can be used as <code>add n/John Doe</code>.</p>
+<p>Words in <code>UPPER_CASE</code> are the parameters to be supplied by the user e.g. in <code>login n/NRIC</code>, <code>NRIC</code> is a parameter which can be used as <code>add n/S01234567Z</code>.</p>
 </li>
 <li>
 <p>Items in square brackets are optional e.g <code>n/NAME [t/TAG]</code> can be used as <code>n/John Doe t/friend</code> or as <code>n/John Doe</code>.</p>
@@ -123,26 +126,198 @@ e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> wil
 <div class="sect2">
 <h3 id="viewing-help-code-help-code"><a class="link" href="#viewing-help-code-help-code">3.1. Viewing help : <code>help</code></a></h3>
 <div class="paragraph">
-<p>Format: <code>help</code></p>
+<p>Lists out a list of commands &amp; instructions<br>
+Format: <code>help</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="adding-a-person-code-add-code"><a class="link" href="#adding-a-person-code-add-code">3.2. Adding a person: <code>add</code></a></h3>
+<h3 id="log-in-code-login-code-code-not-implemented-yet-code"><a class="link" href="#log-in-code-login-code-code-not-implemented-yet-code">3.2. Log in : <code>login</code> <code>Not implemented yet</code></a></h3>
 <div class="paragraph">
-<p>Adds a person to the address book<br>
-Format: <code>add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]&#8230;&#8203;</code></p>
+<p>Log user into their account.<br>
+NRIC and password are case-sensitive.<br>
+Format: <code>login n/NRIC pw/PASSWORD</code></p>
 </div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-A person can have any number of tags (including 0)
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>login n/S01234567Z pw/cs2103noteasy</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="log-out-code-logout-code-code-not-implemented-yet-code"><a class="link" href="#log-out-code-logout-code-code-not-implemented-yet-code">3.3. Log out : <code>logout</code> <code>Not implemented yet</code></a></h3>
+<div class="paragraph">
+<p>Logs the user out of the account<br>
+Format : <code>logout</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="change-password-code-chpass-code-code-not-implemented-yet-code"><a class="link" href="#change-password-code-chpass-code-code-not-implemented-yet-code">3.4. Change password : <code>chpass</code> <code>Not implemented yet</code></a></h3>
+<div class="paragraph">
+<p>Changes password of the user to a new one. The system will prompt the user to reconfirm the new password.<br>
+Format: `chpass pw/CURRENT_PASSWORD pw/NEW_PASSWORD</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>chpass pw/cs2103noteasy pw/cs2103veryhard</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="view-duties-assigned-to-user-code-view-code-code-not-implemented-yet-code"><a class="link" href="#view-duties-assigned-to-user-code-view-code-code-not-implemented-yet-code">3.5. View duties assigned to user : <code>view</code> <code>Not implemented yet</code></a></h3>
+<div class="paragraph">
+<p>The user can see their details about their own duties assigned to them and their upcoming duties ranked by recency.<br>
+Format: <code>view</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="view-duties-assigned-to-other-users-code-view-code-code-not-implemented-yet-code"><a class="link" href="#view-duties-assigned-to-other-users-code-view-code-code-not-implemented-yet-code">3.6. View duties assigned to other users : <code>view</code> <code>Not implemented yet</code></a></h3>
+<div class="paragraph">
+<p>The user can see their details about their own duties assigned to other users.<br>
+Format: <code>view NAME</code></p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>view Cassell</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="view-roster-code-roster-code-code-not-implemented-yet-code"><a class="link" href="#view-roster-code-roster-code-code-not-implemented-yet-code">3.7. View roster : <code>roster</code> <code>Not implemented yet</code></a></h3>
+<div class="paragraph">
+<p>The user can see the full duty rosters for particular months.<br>
+Format: <code>roster MONTH</code></p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>roster February</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="block-dates-code-block-code"><a class="link" href="#block-dates-code-block-code">3.8. Block dates : <code>block</code></a></h3>
+<div class="paragraph">
+<p>The user can block dates and set which dates they are unavailable to duties for upcoming months. A user can block up to 15 days per month.<br>
+Format: <code>block MONTH DAY DAY DAY &#8230;&#8203;</code></p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>block March 3 6 15 21 30</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="view-blocked-dates-code-block-code"><a class="link" href="#view-blocked-dates-code-block-code">3.9. View blocked dates : <code>block</code></a></h3>
+<div class="paragraph">
+<p>The user can view the dates they have blocked for a particular month.<br>
+Format: <code>block MONTH</code></p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>block March</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="find-who-is-assigned-duty-today-code-who-code"><a class="link" href="#find-who-is-assigned-duty-today-code-who-code">3.10. Find who is assigned duty today : <code>who</code></a></h3>
+<div class="paragraph">
+<p>The user can find out which person is assigned duty today.<br>
+Format: <code>who</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="find-who-is-assigned-duty-on-a-given-day-code-who-code"><a class="link" href="#find-who-is-assigned-duty-on-a-given-day-code-who-code">3.11. Find who is assigned duty on a given day : <code>who</code></a></h3>
+<div class="paragraph">
+<p>The user can find out which person is assigned duty on a given day.<br>
+Format: <code>who DATE</code></p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>who 14022019</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="make-a-swap-request-with-another-user-code-swap-code"><a class="link" href="#make-a-swap-request-with-another-user-code-swap-code">3.12. Make a swap request with another user : <code>swap</code></a></h3>
+<div class="paragraph">
+<p>The user can request for a duty swap with another user. This will be subject to the agreement of the other user and approval of the admin (i.e. commander).<br>
+The other user and admin will be notified upon login and they will be prompted to accept or decline the request.<br>
+Format: `swap d/CURRENTDUTYDATE d/DESIREDDUTYDATE [t/MESSAGE]</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>swap d/14022019 d/21022019 t/Please help a bro out!</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="finding-another-person-code-find-code"><a class="link" href="#finding-another-person-code-find-code">3.13. Finding another person: <code>find</code></a></h3>
+<div class="paragraph">
+<p>The user can find people whose names contain any of the given keywords. Information of the person’s rank. company, section and contact number can be seen.<br>
+Format: <code>find KEYWORD [MORE KEYWORDS]</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="filter-people-code-filter-code"><a class="link" href="#filter-people-code-filter-code">3.14. Filter people: <code>filter</code></a></h3>
+<div class="paragraph">
+<p>The user can list out the people who are within the filtered rank, date, or company. The list can be sorted in ascending or descending order.<br>
+Format: <code>filter [A or D] [s/STARTDATE] [e/ENDDATE] [r/RANK] [c/COMPANY] [s/SQUAD]</code></p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Default ordering is alphabetical order, ascending</p>
+</li>
+<li>
+<p>A or D specifies if ordering is ascending or descending</p>
+</li>
+<li>
+<p>Dates to be entered in ddmmyyyy format.</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 <div class="paragraph">
 <p>Examples:</p>
@@ -150,373 +325,130 @@ A person can have any number of tags (including 0)
 <div class="ulist">
 <ul>
 <li>
-<p><code>add n/John Doe p/98765432 e/johnd@example.com a/John street, block 123, #01-01</code></p>
+<p><code>filter</code><br>
+Lists down all personnel, without any filtering, sorted in ascending order by default</p>
 </li>
 <li>
-<p><code>add n/Betsy Crowe t/friend e/betsycrowe@example.com a/Newgate Prison p/1234567 t/criminal</code></p>
+<p><code>filter D s/11022019 e/11032019 r/PTE</code><br>
+Lists down all personnel with rank Private and available dates between 11-Feb-2019 and 11-March-2019, in descending alphabetical order.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="listing-all-persons-code-list-code"><a class="link" href="#listing-all-persons-code-list-code">3.3. Listing all persons : <code>list</code></a></h3>
+<h3 id="exit-code-exit-code"><a class="link" href="#exit-code-exit-code">3.15. Exit : <code>exit</code></a></h3>
 <div class="paragraph">
-<p>Shows a list of all persons in the address book.<br>
+<p>Exits the program. User will be logged out automatically.<br>
+Format: <code>exit</code></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="admin-features"><a class="link" href="#admin-features">4. Admin Features</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="viewing-help-for-admin-code-helpadmin-code"><a class="link" href="#viewing-help-for-admin-code-helpadmin-code">4.1. Viewing help for admin : <code>helpadmin</code></a></h3>
+<div class="paragraph">
+<p>Lists out a list of commands &amp; instructions for admin.<br>
+Format: <code>helpadmin</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="add-a-user-code-add-code"><a class="link" href="#add-a-user-code-add-code">4.2. Add a user : <code>add</code></a></h3>
+<div class="paragraph">
+<p>Add a user to the system with the corresponding NRIC, password, company, section, rank and contact number.<br>
+Format: <code>add n/NRIC pw/PASSWORD c/COMPANY s/SECTION r/RANK n/NAME p/CONTACTNUMBER</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="delete-a-user-code-delete-code"><a class="link" href="#delete-a-user-code-delete-code">4.3. Delete a user : <code>delete</code></a></h3>
+<div class="paragraph">
+<p>Delete a user from the system with the corresponding NRIC. The admin will be prompted with a confirmation message.<br>
+Format: <code>delete NRIC</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="update-a-user-s-details-code-edit-code"><a class="link" href="#update-a-user-s-details-code-edit-code">4.4. Update a user’s details : <code>edit</code></a></h3>
+<div class="paragraph">
+<p>Updates a existing user’s details given an NRIC.<br>
+Format: <code>edit [n/NRIC] [c/COMPANY] [s/SECTION] [r/RANK] [n/NAME] [p/PHONENUMBER]</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="import-personal-details-from-a-file-code-import-code"><a class="link" href="#import-personal-details-from-a-file-code-import-code">4.5. Import personal details from a file : <code>import</code></a></h3>
+<div class="paragraph">
+<p>Imports personal details of users from a TXT file.<br>
+Format: <code>import [FILE_NAME.txt]</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="list-all-the-users-code-list-code"><a class="link" href="#list-all-the-users-code-list-code">4.6. List all the users: <code>list</code></a></h3>
+<div class="paragraph">
+<p>Lists out all users in the system with their details.<br>
 Format: <code>list</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="editing-a-person-code-edit-code"><a class="link" href="#editing-a-person-code-edit-code">3.4. Editing a person : <code>edit</code></a></h3>
+<h3 id="scheduling-duties-code-schedule-code"><a class="link" href="#scheduling-duties-code-schedule-code">4.7. Scheduling duties : <code>schedule</code></a></h3>
 <div class="paragraph">
-<p>Edits an existing person in the address book.<br>
-Format: <code>edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]&#8230;&#8203;</code></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Edits the person at the specified <code>INDEX</code>. The index refers to the index number shown in the displayed person list. The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
-</li>
-<li>
-<p>At least one of the optional fields must be provided.</p>
-</li>
-<li>
-<p>Existing values will be updated to the input values.</p>
-</li>
-<li>
-<p>When editing tags, the existing tags of the person will be removed i.e adding of tags is not cumulative.</p>
-</li>
-<li>
-<p>You can remove all the person&#8217;s tags by typing <code>t/</code> without specifying any tags after it.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>edit 1 p/91234567 e/johndoe@example.com</code><br>
-Edits the phone number and email address of the 1st person to be <code>91234567</code> and <code>johndoe@example.com</code> respectively.</p>
-</li>
-<li>
-<p><code>edit 2 n/Betsy Crower t/</code><br>
-Edits the name of the 2nd person to be <code>Betsy Crower</code> and clears all existing tags.</p>
-</li>
-</ul>
+<p>This command schedules the duties for the upcoming month. It takes into account the block out dates of each guard duty personnel and their extras. It will sort by available dates and distribute duties accordingly. After the algorithm computes a plausible schedule, the schedule will be displayed and admin will be prompted to either confirm the schedule or rerun the scheduler algorithm.<br>
+Format: <code>schedule MONTH</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="locating-persons-by-name-code-find-code"><a class="link" href="#locating-persons-by-name-code-find-code">3.5. Locating persons by name: <code>find</code></a></h3>
+<h3 id="extra-duty-code-extra-code"><a class="link" href="#extra-duty-code-extra-code">4.8. Extra duty : <code>extra</code></a></h3>
 <div class="paragraph">
-<p>Finds persons whose names contain any of the given keywords.<br>
-Format: <code>find KEYWORD [MORE_KEYWORDS]</code></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>The search is case insensitive. e.g <code>hans</code> will match <code>Hans</code></p>
-</li>
-<li>
-<p>The order of the keywords does not matter. e.g. <code>Hans Bo</code> will match <code>Bo Hans</code></p>
-</li>
-<li>
-<p>Only the name is searched.</p>
-</li>
-<li>
-<p>Only full words will be matched e.g. <code>Han</code> will not match <code>Hans</code></p>
-</li>
-<li>
-<p>Persons matching at least one keyword will be returned (i.e. <code>OR</code> search). e.g. <code>Hans Bo</code> will return <code>Hans Gruber</code>, <code>Bo Yang</code></p>
-</li>
-</ul>
-</div>
-</div>
+<p>Automatically allocates extra duties for a selected personnel in the upcoming month.<br>
+Format: <code>extra n/NRIC d/NUMBEROFDAYS</code></p>
 </div>
 <div class="paragraph">
-<p>Examples:</p>
+<p>Example:</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>find John</code><br>
-Returns <code>john</code> and <code>John Doe</code></p>
-</li>
-<li>
-<p><code>find Betsy Tim John</code><br>
-Returns any person having names <code>Betsy</code>, <code>Tim</code>, or <code>John</code></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>*<code>extra n/S9876543A d/7</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="deleting-a-person-code-delete-code"><a class="link" href="#deleting-a-person-code-delete-code">3.6. Deleting a person : <code>delete</code></a></h3>
+<h3 id="saving-the-data"><a class="link" href="#saving-the-data">4.9. Saving the data</a></h3>
 <div class="paragraph">
-<p>Deletes the specified person from the address book.<br>
-Format: <code>delete INDEX</code></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Deletes the person at the specified <code>INDEX</code>.</p>
-</li>
-<li>
-<p>The index refers to the index number shown in the displayed person list.</p>
-</li>
-<li>
-<p>The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>list</code><br>
-<code>delete 2</code><br>
-Deletes the 2nd person in the address book.</p>
-</li>
-<li>
-<p><code>find Betsy</code><br>
-<code>delete 1</code><br>
-Deletes the 1st person in the results of the <code>find</code> command.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="selecting-a-person-code-select-code"><a class="link" href="#selecting-a-person-code-select-code">3.7. Selecting a person : <code>select</code></a></h3>
-<div class="paragraph">
-<p>Selects the person identified by the index number used in the displayed person list.<br>
-Format: <code>select INDEX</code></p>
-</div>
-<div class="sidebarblock">
-<div class="content">
-<div class="ulist">
-<ul>
-<li>
-<p>Selects the person and loads the Google search page the person at the specified <code>INDEX</code>.</p>
-</li>
-<li>
-<p>The index refers to the index number shown in the displayed person list.</p>
-</li>
-<li>
-<p>The index <strong>must be a positive integer</strong> <code>1, 2, 3, &#8230;&#8203;</code></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>list</code><br>
-<code>select 2</code><br>
-Selects the 2nd person in the address book.</p>
-</li>
-<li>
-<p><code>find Betsy</code><br>
-<code>select 1</code><br>
-Selects the 1st person in the results of the <code>find</code> command.</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="listing-entered-commands-code-history-code"><a class="link" href="#listing-entered-commands-code-history-code">3.8. Listing entered commands : <code>history</code></a></h3>
-<div class="paragraph">
-<p>Lists all the commands that you have entered in reverse chronological order.<br>
-Format: <code>history</code></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Pressing the <kbd>&uarr;</kbd> and <kbd>&darr;</kbd> arrows will display the previous and next input respectively in the command box.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">3.9. Undoing previous command : <code>undo</code></a></h3>
-<div class="paragraph">
-<p>Restores the address book to the state before the previous <em>undoable</em> command was executed.<br>
-Format: <code>undo</code></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>Undoable commands: those commands that modify the address book&#8217;s content (<code>add</code>, <code>delete</code>, <code>edit</code> and <code>clear</code>).</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>delete 1</code><br>
-<code>list</code><br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br></p>
-</li>
-<li>
-<p><code>select 1</code><br>
-<code>list</code><br>
-<code>undo</code><br>
-The <code>undo</code> command fails as there are no undoable commands executed previously.</p>
-</li>
-<li>
-<p><code>delete 1</code><br>
-<code>clear</code><br>
-<code>undo</code> (reverses the <code>clear</code> command)<br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">3.10. Redoing the previously undone command : <code>redo</code></a></h3>
-<div class="paragraph">
-<p>Reverses the most recent <code>undo</code> command.<br>
-Format: <code>redo</code></p>
-</div>
-<div class="paragraph">
-<p>Examples:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>delete 1</code><br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br>
-<code>redo</code> (reapplies the <code>delete 1</code> command)<br></p>
-</li>
-<li>
-<p><code>delete 1</code><br>
-<code>redo</code><br>
-The <code>redo</code> command fails as there are no <code>undo</code> commands executed previously.</p>
-</li>
-<li>
-<p><code>delete 1</code><br>
-<code>clear</code><br>
-<code>undo</code> (reverses the <code>clear</code> command)<br>
-<code>undo</code> (reverses the <code>delete 1</code> command)<br>
-<code>redo</code> (reapplies the <code>delete 1</code> command)<br>
-<code>redo</code> (reapplies the <code>clear</code> command)<br></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="clearing-all-entries-code-clear-code"><a class="link" href="#clearing-all-entries-code-clear-code">3.11. Clearing all entries : <code>clear</code></a></h3>
-<div class="paragraph">
-<p>Clears all entries from the address book.<br>
-Format: <code>clear</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="exiting-the-program-code-exit-code"><a class="link" href="#exiting-the-program-code-exit-code">3.12. Exiting the program : <code>exit</code></a></h3>
-<div class="paragraph">
-<p>Exits the program.<br>
-Format: <code>exit</code></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="saving-the-data"><a class="link" href="#saving-the-data">3.13. Saving the data</a></h3>
-<div class="paragraph">
-<p>Address book data are saved in the hard disk automatically after any command that changes the data.<br>
+<p>Duty roster data are saved in the hard disk automatically after any command that changes the data.<br>
 There is no need to save manually.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="encrypting-data-files-code-coming-in-v2-0-code"><a class="link" href="#encrypting-data-files-code-coming-in-v2-0-code">3.14. Encrypting data files <code>[coming in v2.0]</code></a></h3>
-<div class="paragraph">
-<p><em>{explain how the user can enable/disable data encryption}</em></p>
 </div>
+</div>
+<div class="sect1">
+<h2 id="faq"><a class="link" href="#faq">5. FAQ</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Q</strong>: What if I want to swap my duty with another person?<br>
+<strong>A</strong>: Contact the administrator with the request.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="faq"><a class="link" href="#faq">4. FAQ</a></h2>
+<h2 id="command-summary"><a class="link" href="#command-summary">6. Command Summary</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Q</strong>: How do I transfer my data to another Computer?<br>
-<strong>A</strong>: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous Address Book folder.</p>
+<p>General User<br>
+* <strong>Viewing help</strong> : <code>help</code><br>
+* <strong>Log in</strong> : <code>login n/NRIC  pw/PASSWORD</code><br>
+* <strong>Log out</strong> : <code>logout</code><br>
+* <strong>View</strong> : <code>view KEYWORD [MORE KEYWORDS]</code><br>
+* <strong>Blocking dates</strong> : <code>block d/date d/date d/date …</code><br>
+* <strong>Finding a person</strong> : <code>find KEYWORD [MORE KEYWORDS]</code><br>
+* <strong>Filter</strong> : <code>filter [A or D] [s/STARTDATE] [e/ENDDATE] [r/RANK] [c/COMPANY] [s/SQUAD]</code><br>
+* <strong>Change password</strong> : <code>chpass pw/CURRENT_PASSWORD pw/NEW_PASSWORD</code><br>
+* <strong>Exit</strong> : <code>exit</code><br>
+Admin<br>
+* <strong>Command help for admin</strong> : <code>helpAdmin</code><br>
+* <strong>Add a user</strong> : <code>addUser n/NRIC pw/PASSWORD c/COMPANY s/SECTION r/RANK n/NAME p/PHONENUMBER</code><br>
+* <strong>Delete a user</strong> : <code>deleteUser n/NRIC</code><br>
+* <strong>Edit a user</strong> : <code>editUser [n/NRIC] [c/COMPANY] [s/SECTION] [r/RANK] [n/NAME] [p/PHONENUMBER]</code><br>
+* <strong>Import personal details from a file</strong> : <code>import [FILE_NAME.txt]</code><br>
+* <strong>List all the users</strong> : <code>listUser</code><br>
+* <strong>Scheduling duties</strong> : <code>schedule m/MONTH</code><br></p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="command-summary"><a class="link" href="#command-summary">5. Command Summary</a></h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Add</strong> <code>add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]&#8230;&#8203;</code><br>
-e.g. <code>add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 t/friend t/colleague</code></p>
-</li>
-<li>
-<p><strong>Clear</strong> : <code>clear</code></p>
-</li>
-<li>
-<p><strong>Delete</strong> : <code>delete INDEX</code><br>
-e.g. <code>delete 3</code></p>
-</li>
-<li>
-<p><strong>Edit</strong> : <code>edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [t/TAG]&#8230;&#8203;</code><br>
-e.g. <code>edit 2 n/James Lee e/jameslee@example.com</code></p>
-</li>
-<li>
-<p><strong>Find</strong> : <code>find KEYWORD [MORE_KEYWORDS]</code><br>
-e.g. <code>find James Jake</code></p>
-</li>
-<li>
-<p><strong>List</strong> : <code>list</code></p>
-</li>
-<li>
-<p><strong>Help</strong> : <code>help</code></p>
-</li>
-<li>
-<p><strong>Select</strong> : <code>select INDEX</code><br>
-e.g.<code>select 2</code></p>
-</li>
-<li>
-<p><strong>History</strong> : <code>history</code></p>
-</li>
-<li>
-<p><strong>Undo</strong> : <code>undo</code></p>
-</li>
-<li>
-<p><strong>Redo</strong> : <code>redo</code></p>
-</li>
-</ul>
-</div>
-</div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-02-19 06:04:24 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-02-19 14:10:32 UTC</div></div></div></body></html>
